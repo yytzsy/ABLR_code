@@ -2,8 +2,7 @@
 The source code of the paper: "To Find Where You Talk: Temporal Sentence Localization in Video with Attention Based Location Regression"
 
 
-#######################################################################################################################################
-
+#####################################################################################################
 ./src/data_preparation_ActivityNet: Prepare data for ActivityNet Captions dataset
 
 ./src/data_preparation_Tacos: Prepare data for TACOS dataset
@@ -12,7 +11,7 @@ The source code of the paper: "To Find Where You Talk: Temporal Sentence Localiz
 
 ./data: Folder for data preparation
 
-#######################################################################################################################################
+#####################################################################################################
 
 External data to download or acquire: 
 

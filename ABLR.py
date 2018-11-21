@@ -946,8 +946,8 @@ if __name__ == '__main__':
     sub_dir, logging, regress_layer_num, model_save_dir, result_save_dir = make_prepare_path(args.regress_layer_num,dataset)
 
     if args.task == 'train':
-        with tf.device('/cpu:0'):
+        with tf.device('/gpu:0'):
             train(sub_dir, logging, regress_layer_num, model_save_dir, result_save_dir)
     elif args.task == 'localize':
-        with tf.device('/cpu:0'):
+        with tf.device('/gpu:0'):
             localize(sub_dir, logging, regress_layer_num, result_save_dir = result_save_dir, model_path = args.model)

@@ -40,7 +40,8 @@ def get_c3d(f_path,ftype):
     if not os.path.exists(f_path):
         print 'not exists!!!!'
         return v
-    v_f = os.listdir(f_path)
+    v_f_tmp = os.listdir(f_path)
+    v_f = np.sort(v_f_tmp)
     for v_ele in v_f:
         if v_ele.endswith(ftype):
             [_,v_tmp] = read_c3d(os.path.join(f_path,v_ele))
